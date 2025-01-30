@@ -25,6 +25,7 @@
 #include "buttons.h"
 #include "flash.h"
 #include "lcd.h"
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -54,7 +55,7 @@ SPI_HandleTypeDef hspi2;
 
 /* USER CODE BEGIN PV */
 
-uint16_t audiobuffer[48000] __attribute__((section (".audio")));
+uint8_t audiobuffer[48000] __attribute__((section (".audio")));
 
 /* USER CODE END PV */
 
